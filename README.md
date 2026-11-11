@@ -1,4 +1,4 @@
-# 🧱 Why ResNets Work
+# Why ResNets Work
 
 Build ResNet blocks in TensorFlow/Keras, train a **56-layer ResNet** and the **exact same network without skip connections** on CIFAR-10, and see what skip connections actually change. A Streamlit app lets you classify photos with the trained ResNet (with a Grad-CAM map of where it looked) and compare the two networks.
 
@@ -7,7 +7,7 @@ Build ResNet blocks in TensorFlow/Keras, train a **56-layer ResNet** and the **e
 1. **Classify a photo:** pick a CIFAR-10 test image or upload your own. The app shows what the network actually sees (32×32 pixels), its answer, and a Grad-CAM map of the regions that drove the answer.
 2. **Why skip connections?** Block diagrams, then the comparison: test accuracy and learning curves of the network with and without skip connections, plus the size of the learning signal (gradient) at every layer before and after training. The text on this tab is generated from the measured results, so it reports what happened, not what the textbook says should happen.
 
-## Get it running (3 steps)
+## Get it running
 
 The trained weights are not in the repo until you create them (the training takes a GPU; Colab provides one for free).
 
