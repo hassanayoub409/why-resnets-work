@@ -1,0 +1,2 @@
+# Only for training on your own machine. On Google Colab, TensorFlow is already installed: skip this file.
+-r requirements.txt
