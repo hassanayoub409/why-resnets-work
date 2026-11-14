@@ -32,7 +32,7 @@ def load_resources():
 
 needed = ["results.json", "resnet_weights.npz", "samples.npz"]
 if not all((MODELS_DIR / f).exists() for f in needed):
-    st.title("🧱 Why ResNets Work")
+    st.title("Why ResNets Work")
     st.error("The trained model files are missing from the `models/` folder.")
     st.markdown("Train them for free on Google Colab (about an hour), then copy `resnet_weights.npz`, `results.json` "
                 "and `samples.npz` into `models/`. The README has step-by-step instructions "
@@ -42,7 +42,7 @@ model, results, sample_images, sample_labels = load_resources()
 classes = results["classes"]
 cfg, models_info = results["config"], results["models"]
 
-st.title("🧱 Why ResNets Work")
+st.title("Why ResNets Work")
 st.markdown("**What do skip connections change in a deep neural network?** Classify a photo with a 56-layer ResNet, "
             "then compare it with the exact same network *without* its skip connections.")
 if cfg.get("fake_data"):
