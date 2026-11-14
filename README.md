@@ -7,6 +7,9 @@ Build ResNet blocks in TensorFlow/Keras, train a **56-layer ResNet** and the **e
 1. **Classify a photo:** pick a CIFAR-10 test image or upload your own. The app shows what the network actually sees (32×32 pixels), its answer, and a Grad-CAM map of the regions that drove the answer.
 2. **Why skip connections?** Block diagrams, then the comparison: test accuracy and learning curves of the network with and without skip connections, plus the size of the learning signal (gradient) at every layer before and after training. The text on this tab is generated from the measured results, so it reports what happened, not what the textbook says should happen.
 
+[![Open the Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://why-resnets-work.streamlit.app)
+
+
 ## Get it running
 
 The trained weights are not in the repo until you create them (the training takes a GPU; Colab provides one for free).
